@@ -1,0 +1,47 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red73\green140\blue207;
+\red194\green194\blue192;\red204\green204\blue202;\red67\green193\blue160;\red212\green213\blue152;\red143\green215\blue255;
+\red88\green137\blue66;\red167\green197\blue150;\red184\green112\blue179;\red193\green125\blue99;}
+{\*\expandedcolortbl;;\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c99985\c0;\cssrgb\c34777\c62428\c84960;
+\cssrgb\c80437\c80436\c79935;\cssrgb\c83591\c83590\c83069;\cssrgb\c30694\c79083\c69026;\cssrgb\c86200\c86120\c65973;\cssrgb\c62095\c87346\c100000;
+\cssrgb\c41346\c59743\c32702;\cssrgb\c71112\c80895\c65487;\cssrgb\c77632\c52918\c75320;\cssrgb\c80749\c56691\c46382;}
+\margl1440\margr1440\vieww28300\viewh16080\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+//Program to help\
+\
+import java.util.Scanner;\
+\
+public class assignment \{\
+\
+    public static void main(String[] args) \{\
+\
+        // 1. Generate two random single-digit integers\
+        int value1 = (int)(Math.random() * 10); // declares value1\
+        int value2 = (int)(Math.random() * 10); // declares value 2\
+\
+        // 2. If value1 < value2, swap value1 with value2\
+        if (value1 < value2) \{\
+            int temp = value1;\
+            value1 = value2;\
+            value2 = temp;\
+		//If value1 is less than value2, then set the integer value of temp to value 1 and then make all 3 variables equal to each other\
+        \}\
+        \
+        // 3. Prompt the student to answer "what is _ - _?"\
+        System.out.println("What is " + value1 + " - " + value2 + "? "); // Prompts the output to print, \'93What is value1 - value2?\
+        Scanner input = new Scanner(System.in); // sets up scanner\
+        int answer = input.nextInt();\
+\
+        //4. Grade the answer and display the result\
+        if (answer == value1 - value2) \{\
+            System.out.println("You are correct!"); // prints correct if the user enters the correct answer\
+        \} else \{\
+            System.out.println("Your answer is wrong. " + value1 + " - " + value2 + " should be " + (value1 - value2)); // prints incorrect and then gives the user the solution to the answer\
+        \}\
+    \}\
+\}\
+}
