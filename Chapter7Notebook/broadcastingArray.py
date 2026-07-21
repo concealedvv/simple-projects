@@ -7,7 +7,3 @@ broadcastArray += 7
 broadcastArray *= 2
 
 print(broadcastArray)
-
-#Cube every element of the array
-#Add 7 to every element of the array
-#Multiply every element of the array by 2
